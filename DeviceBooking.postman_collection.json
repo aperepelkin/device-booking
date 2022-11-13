@@ -1,0 +1,82 @@
+{
+	"info": {
+		"_postman_id": "32ab173e-f3fa-48ef-8dca-b3e484caec1a",
+		"name": "DeviceBooking",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "991063"
+	},
+	"item": [
+		{
+			"name": "ListDevices",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/devices"
+			},
+			"response": []
+		},
+		{
+			"name": "BookDevice",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": "http://localhost:8080/devices/a8ceea53-d39b-4768-a44b-a307f8d115f1/book"
+			},
+			"response": []
+		},
+		{
+			"name": "CreateDevice",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Xiaomi Redmi 9\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/devices"
+			},
+			"response": []
+		},
+		{
+			"name": "ReleaseDevice",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:8080/devices/a8ceea53-d39b-4768-a44b-a307f8d115f1/release"
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "basic",
+		"basic": {
+			"password": "password",
+			"username": "user"
+		}
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
